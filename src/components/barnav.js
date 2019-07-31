@@ -5,6 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { textAlign } from "@material-ui/system";
 import tituloprincipal from "./prueba-titulo2.svg";
+import barnav from "./barnav.scss";
 const useStyles = makeStyles({
   root: {
     flexGrow: 1

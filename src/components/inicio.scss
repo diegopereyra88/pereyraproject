@@ -1,0 +1,19 @@
+.gridpadre {
+  .grid1 {
+    background-color: black;
+  }
+  .grid2 {
+    @media (min-width: 268px) {
+      background-color: yellow;
+      width: 50%;
+      height: 50%;
+      display: inline-flex;
+      margin: left;
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+    }
+    background-color: blue;
+  }
+}
