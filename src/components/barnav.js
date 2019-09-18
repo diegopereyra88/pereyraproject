@@ -18,7 +18,12 @@ export default function SimpleAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static" style={{ backgroundColor: "#FFF11E" }}>
-        <Toolbar>
+        <Toolbar
+          changeColorOnScroll={{
+            height: 400,
+            color: "white"
+          }}
+        >
           <Typography
             variant="h6"
             color="inherit"
