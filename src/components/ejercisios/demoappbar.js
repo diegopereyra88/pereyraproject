@@ -42,10 +42,10 @@ function ButtonAppBar(propidaddes) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Noticias
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Ingresa</Button>
+          <Button color="inherit">Logueate</Button>
         </Toolbar>
       </AppBar>
     </div>

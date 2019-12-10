@@ -13,11 +13,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Boton />
-        <Responsive />
-
         <BarNav />
-        <Demostar />
       </React.Fragment>
     );
   }
