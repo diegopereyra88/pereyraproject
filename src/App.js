@@ -19,6 +19,7 @@ class App extends Component {
         <BarNav />
 
         <Primaveracero />
+        <Primaveracero />
       </React.Fragment>
     );
   }
