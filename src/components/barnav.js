@@ -8,7 +8,7 @@ import tituloprincipal from "./prueba-titulo2.svg";
 import IconButton from "@material-ui/core/IconButton";
 import barnav from "./barnav.scss";
 import Button from "@material-ui/core/Button";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
+import useMediaQuery from "@material-ui/core/useMediaQuery"; //se usa para mediaquery libreria de react
 import MenuIcon from "@material-ui/icons/Menu";
 import Desp from "./ejercisios/menudesplegable1.js";
 
@@ -24,8 +24,8 @@ const useStyles = makeStyles({
 
 export default function SimpleAppBar() {
   const classes = useStyles();
-  const isActive = useMediaQuery("(max-width:600px)");
-  const titulos = useMediaQuery("(min-width:600px)");
+  const isActive = useMediaQuery("(max-width:600px)"); //se usa para mediaquery libreria de react
+  const titulos = useMediaQuery("(min-width:600px)"); //se usa para mediaquery libreria de react
 
   return (
     <div className={classes.root}>
@@ -53,9 +53,9 @@ export default function SimpleAppBar() {
                 padding: "5px"
               }}
             />
-            {titulos && <Button color="dark">ART</Button>}
+            {titulos && <Button color="dark">ART</Button>}{" "}
+            {/*se usa para mediaquery libreria de react*/}
             {titulos && <Button color="dark">GAMING</Button>}
-
             {titulos && <Button color="dark">ANIMATION</Button>}
             {titulos && <Button color="dark">DESIGN</Button>}
             {titulos && <Button color="dark">MUSIC</Button>}
