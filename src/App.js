@@ -9,15 +9,16 @@ import Barra from "./components/Layout/index.js";
 import Demo from "./components/ejercisios/demoappbar.js";
 import Resp from "./components/ejercisios/cssresponsive.js";
 import Boton from "./components/ejercisios/botonprueba.js";
-import Desp from "./components/ejercisios/menudesplegable1.js";
+import Respp from "./components/ejercisios/responsivematerial2.js";
+import Primaveracero from "./components/ejercisios/spring2.js";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <BarNav />
-        <Demo />
-        <Resp />
+
+        <Primaveracero />
       </React.Fragment>
     );
   }
