@@ -5,11 +5,19 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { textAlign } from "@material-ui/system";
 import tituloprincipal from "./prueba-titulo2.svg";
+import IconButton from "@material-ui/core/IconButton";
 import barnav from "./barnav.scss";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import MenuIcon from "@material-ui/icons/Menu";
+import Desp from "./ejercisios/menudesplegable1.js";
 const useStyles = makeStyles({
   root: {
     flexGrow: 1
-  }
+  },
+  res: {
+    color: "grey"
+  },
+  menuburger: {}
 });
 
 export default function SimpleAppBar() {
@@ -24,6 +32,7 @@ export default function SimpleAppBar() {
             color: "white"
           }}
         >
+          <Desp />
           <Typography
             variant="h6"
             color="inherit"
@@ -33,7 +42,7 @@ export default function SimpleAppBar() {
               src={tituloprincipal}
               alt=""
               style={{
-                width: "60%",
+                width: "50%",
                 display: "block",
                 margin: "auto",
                 padding: "10px"

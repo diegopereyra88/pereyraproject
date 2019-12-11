@@ -6,6 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import { minWidth } from "@material-ui/system";
+import Desp from "./menudesplegable1.js";
 
 const useStyles = makeStyles(soyparametro => ({
   //Parametro de makeStyles
@@ -14,7 +16,7 @@ const useStyles = makeStyles(soyparametro => ({
   },
   menudelBotton: propiedadespasando => ({
     marginRight: soyparametro.spacing(2),
-    backgroundColor: "#4CAF50"
+    backgroundColor: "grey"
   }),
   title: {
     flexGrow: 1
@@ -33,14 +35,7 @@ function ButtonAppBar(propidaddes) {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start" //props del componente IconButton
-            className={classes.menudelBotton}
-            color="black"
-            aria-label="Menu"
-          >
-            <MenuIcon />
-          </IconButton>
+          <Desp />
           <Typography variant="h6" className={classes.title}>
             Noticias
           </Typography>
