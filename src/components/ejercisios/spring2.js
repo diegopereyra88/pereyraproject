@@ -1,7 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { Spring } from "react-spring/renderprops";
-import Pieza from "../img/20191210_234538.jpg";
+import Pieza from "../img/pieza1.svg";
 
 export default function Primaveracero() {
   return (
@@ -22,21 +22,6 @@ export default function Primaveracero() {
                 padding: "5px"
               }}
             />{" "}
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad
-              maiores numquam minus velit expedita id pariatur quo enim, animi
-              qui autem et recusandae excepturi iure ea perferendis neque. At.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad
-              maiores numquam minus velit expedita id pariatur quo enim, animi
-              qui autem et recusandae excepturi iure ea perferendis neque. At.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad
-              maiores numquam minus velit expedita id pariatur quo enim, animi
-              qui autem et recusandae excepturi iure ea perferendis neque. At.
-            </p>
           </div>
         </div>
       )}
