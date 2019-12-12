@@ -11,6 +11,8 @@ import Resp from "./components/ejercisios/cssresponsive.js";
 import Boton from "./components/ejercisios/botonprueba.js";
 import Respp from "./components/ejercisios/responsivematerial2.js";
 import Primaveracero from "./components/ejercisios/spring2.js";
+import Prubagrids from "./components/ejercisios/prueba-grids.js";
+import Cuadricula from "./components/ejercisios/cuadricula.js";
 
 class App extends Component {
   render() {
@@ -19,7 +21,9 @@ class App extends Component {
         <BarNav />
 
         <Primaveracero />
-        <Primaveracero />
+
+        <Prubagrids />
+        <Cuadricula />
       </React.Fragment>
     );
   }
