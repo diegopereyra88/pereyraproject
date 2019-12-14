@@ -4,6 +4,8 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Pieza from "../img/pieza1.svg";
 import Parlante from "../img/parlante1-03.svg";
+import Jostik from "../img/jostik-09.svg";
+import Piezas from "../img/pieza1.svg";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,9 +23,15 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
+      <Grid container spacing={0}>
+        <Grid item xs={4}>
+          <img src={Piezas} alt="" />
+        </Grid>
+        <Grid item xs={4}>
           <img src={Parlante} alt="" />
+        </Grid>
+        <Grid item xs={4}>
+          <img src={Jostik} alt="" />
         </Grid>
       </Grid>
     </div>

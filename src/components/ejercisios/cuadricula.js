@@ -42,32 +42,45 @@ const useStyles = makeStyles(theme => ({
  *   },
  * ];
  */
+
 export default function TitlebarGridList() {
   const classes = useStyles();
-
+  const handleClick = e => {
+    //prueba de evento
+    console.log("hola");
+  };
   return (
     <div className={classes.root}>
       <GridList cellHeight={180} className={classes.gridList}>
         <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
           <ListSubheader component="div">December</ListSubheader>
         </GridListTile>
-        {tileData.map(tile => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
-              actionIcon={
-                <IconButton
-                  aria-label={`info about ${tile.title}`}
-                  className={classes.icon}
-                >
-                  <InfoIcon />
-                </IconButton>
-              }
-            />
-          </GridListTile>
-        ))}
+        {tileData.map(
+          (
+            //como un array mapea a tileData
+            tile
+          ) => {
+            return (
+              <GridListTile key={tile.img}>
+                <img src={tile.img} alt={tile.title} />
+
+                <GridListTileBar
+                  title={tile.title}
+                  subtitle={<span>by: {tile.author}</span>}
+                  actionIcon={
+                    <IconButton
+                      aria-label={`info about ${tile.title}`}
+                      className={classes.icon}
+                      onClick={handleClick} //prueba de evento
+                    >
+                      <InfoIcon />
+                    </IconButton>
+                  }
+                />
+              </GridListTile>
+            );
+          }
+        )}
       </GridList>
     </div>
   );

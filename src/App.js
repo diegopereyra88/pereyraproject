@@ -13,6 +13,7 @@ import Respp from "./components/ejercisios/responsivematerial2.js";
 import Primaveracero from "./components/ejercisios/spring2.js";
 import Prubagrids from "./components/ejercisios/prueba-grids.js";
 import Cuadricula from "./components/ejercisios/cuadricula.js";
+import Grid2 from "./components/ejercisios/grid2.js";
 
 class App extends Component {
   render() {
@@ -20,10 +21,9 @@ class App extends Component {
       <React.Fragment>
         <BarNav />
 
-        <Primaveracero />
-
         <Prubagrids />
         <Cuadricula />
+        <Grid2 />
       </React.Fragment>
     );
   }
