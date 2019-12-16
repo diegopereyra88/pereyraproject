@@ -5,21 +5,25 @@ import Pieza from "../img/pieza1.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import Footer from "../piepagina";
 
 export default function Primaveracero() {
   return (
-    <Spring
-      from={{ opacity: 0, marginTop: -500 }}
-      to={{ opacity: 1, marginTop: 0 }}
-    >
-      {props => (
-        <div style={props}>
-          <div style={c1style}>
-            <img src={Pieza} alt="" />{" "}
+    <React.Fragment>
+      <Spring
+        from={{ opacity: 0, marginTop: -500 }}
+        to={{ opacity: 1, marginTop: 0 }}
+      >
+        {props => (
+          <div style={props}>
+            <div style={c1style}>
+              <img src={Pieza} alt="" />{" "}
+            </div>
           </div>
-        </div>
-      )}
-    </Spring>
+        )}
+      </Spring>
+      <Footer />
+    </React.Fragment>
   );
 }
 const c1style = {

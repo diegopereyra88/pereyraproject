@@ -8,32 +8,38 @@ const tileData = [
   {
     img: parlante,
     title: "MUSIC",
-    author: "PEREYRA PROJECT"
+    author: "PEREYRA PROJECT",
+    url: "https://www.twitter.com/gliechtenstein"
   },
   {
     img: jostik,
     title: "GAMING",
-    author: "PEREYRA PROJECT"
+    author: "PEREYRA PROJECT",
+    link: ""
   },
   {
     img: piezas,
     title: "PROJECT",
-    author: "PEREYRA PROJECT"
+    author: "PEREYRA PROJECT",
+    link: ""
   },
   {
     img: anim,
     title: "ANIMATION",
-    author: "PEREYRA PROJECT"
+    author: "PEREYRA PROJECT",
+    link: ""
   },
   {
     img: jostik,
     title: "GAMING",
-    author: "PEREYRA PROJECT"
+    author: "PEREYRA PROJECT",
+    link: ""
   },
   {
     img: piezas,
     title: "PROJECT",
-    author: "PEREYRA PROJECT"
+    author: "PEREYRA PROJECT",
+    link: ""
   }
 ];
 

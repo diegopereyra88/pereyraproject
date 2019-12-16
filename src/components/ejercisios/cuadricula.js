@@ -71,7 +71,7 @@ export default function TitlebarGridList() {
                     <IconButton
                       aria-label={`info about ${tile.title}`}
                       className={classes.icon}
-                      onClick={handleClick} //prueba de evento
+                      onClick={`${tile.url}`} //prueba de evento
                     >
                       <InfoIcon />
                     </IconButton>
