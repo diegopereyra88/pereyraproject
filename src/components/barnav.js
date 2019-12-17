@@ -11,6 +11,7 @@ import Button from "@material-ui/core/Button";
 import useMediaQuery from "@material-ui/core/useMediaQuery"; //se usa para mediaquery libreria de react
 import MenuIcon from "@material-ui/icons/Menu";
 import Desp from "./ejercisios/menudesplegable1.js";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -43,16 +44,18 @@ export default function SimpleAppBar() {
             color="inherit"
             style={{ margin: "auto", display: "block" }}
           >
-            <img
-              src={tituloprincipal}
-              alt=""
-              style={{
-                width: "50%",
-                display: "block",
-                margin: "auto",
-                padding: "5px"
-              }}
-            />
+            <Link to="/">
+              <img
+                src={tituloprincipal}
+                alt=""
+                style={{
+                  width: "50%",
+                  display: "block",
+                  margin: "auto",
+                  padding: "5px"
+                }}
+              />
+            </Link>
             {titulos && <Button color="dark">ART</Button>}{" "}
             {/*se usa para mediaquery libreria de react*/}
             {titulos && <Button color="dark">GAMING</Button>}

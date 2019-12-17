@@ -16,18 +16,22 @@ import Cuadricula from "./components/ejercisios/cuadricula.js";
 import Grid2 from "./components/ejercisios/grid2.js";
 import Estados from "./components/practica-estados/state.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Footer from "./components/piepagina";
+import Layout from "./components/layouts.js";
+import Home from "./components/home.js";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Switch>
-          <Route path="/grilla" component={Grid2} />
-          <Route path="/celu" component={Cuadricula} />
-          <Route path="/NOSE" component={Primaveracero} />
-          <Route path="/footer" component={Footer} />
-        </Switch>
+        <Layout>
+          {/*rutas para los links ver layout*/}
+          <Switch>
+            <Route path="/grilla" component={Grid2} />
+            <Route path="/celu" component={Cuadricula} />
+            <Route path="/NOSE" component={Primaveracero} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </Layout>
       </BrowserRouter>
     );
   }
