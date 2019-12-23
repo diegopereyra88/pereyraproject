@@ -6,6 +6,7 @@ import Pieza from "../img/pieza1.svg";
 import Parlante from "../img/parlante1-03.svg";
 import Jostik from "../img/jostik-09.svg";
 import Piezas from "../img/pieza1.svg";
+import Design from "../img/design.svg";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
@@ -35,6 +36,9 @@ export default function CenteredGrid() {
         </Grid>
         <Grid item xs={4}>
           <img src={Jostik} alt="" />
+        </Grid>
+        <Grid item xs={4}>
+          <img src={Design} alt="" />
         </Grid>
       </Grid>
     </div>

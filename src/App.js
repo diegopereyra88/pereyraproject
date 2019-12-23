@@ -18,6 +18,7 @@ import Estados from "./components/practica-estados/state.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/layouts.js";
 import Home from "./components/home.js";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
             <Route path="/" component={Home} />
           </Switch>
         </Layout>
+        <Cuadricula />
       </BrowserRouter>
     );
   }

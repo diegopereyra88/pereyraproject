@@ -1,7 +1,7 @@
 import parlante from "../img/parlante1-03.svg"; //armamos para pasar la info a nuestro cuadricula.js
 import jostik from "../img/jostik-09.svg";
 import anim from "../gif/mirafinalp2.gif";
-
+import design from "../img/design.svg";
 import piezas from "../img/pieza1.svg";
 
 const tileData = [
@@ -30,8 +30,8 @@ const tileData = [
     link: ""
   },
   {
-    img: jostik,
-    title: "GAMING",
+    img: design,
+    title: "DESIGN",
     author: "PEREYRA PROJECT",
     link: ""
   },
