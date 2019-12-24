@@ -19,6 +19,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/layouts.js";
 import Home from "./components/home.js";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Spring from "./components/ejercisios/use-spring";
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
             <Route path="/" component={Home} />
           </Switch>
         </Layout>
+        <Spring />
       </BrowserRouter>
     );
   }
