@@ -5,8 +5,11 @@ import Grid from "@material-ui/core/Grid";
 import Pieza from "../img/pieza1.svg";
 import Parlante from "../img/parlante1-03.svg";
 import Jostik from "../img/jostik-09.svg";
-import Piezas from "../img/pieza1.svg";
+import Piezas from "../img/pieza.svg";
 import Design from "../img/design.svg";
+import Art from "../img/art3-11.svg";
+
+import Anim from "../gif/mirafinalp2.gif";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
@@ -25,7 +28,7 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={0}>
+      <Grid container>
         <Grid item xs={4}>
           <Link to="/nose">
             <img src={Piezas} alt="" />
@@ -39,6 +42,9 @@ export default function CenteredGrid() {
         </Grid>
         <Grid item xs={4}>
           <img src={Design} alt="" />
+        </Grid>
+        <Grid item xs={4}>
+          <img src={Art} alt="" />
         </Grid>
       </Grid>
     </div>
