@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { useSpring, animated } from "react-spring";
-import "./efecto-click.css";
-import Pieza from "../img/pieza.svg";
+
+import iniciales from "../img/logo-iniciales.svg";
+import gato from "../img/gato1.svg";
+import gatobat from "../img/gato-bat.svg";
+import risas from "../img/risas.svg";
 
 export default function App() {
   const [state, toggle] = useState(true);
@@ -32,7 +35,13 @@ export default function App() {
             .interpolate(x => `scale(${x})`)
         }}
       >
-        <img src={Pieza} alt="" />
+        <div style={{ backgroundColor: "#B2DE95" }}>
+          <img src={iniciales} alt="" width="300" height="300" />
+          <img src={gato} alt="" width="300" height="300" />
+          <img src={risas} alt="" width="50" height="50" />
+          <img src={gatobat} alt="" width="300" height="300" />
+          <img src={risas} alt="" width="50" height="50" />
+        </div>
       </animated.div>
     </div>
   );

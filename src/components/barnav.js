@@ -11,7 +11,9 @@ import Button from "@material-ui/core/Button";
 import useMediaQuery from "@material-ui/core/useMediaQuery"; //se usa para mediaquery libreria de react
 import MenuIcon from "@material-ui/icons/Menu";
 import Desp from "./ejercisios/menudesplegable1.js";
+import risas from "../components/img/risas.svg";
 import { Link } from "react-router-dom";
+import Spring from "../components/ejercisios/use-spring";
 
 const useStyles = makeStyles({
   root: {
