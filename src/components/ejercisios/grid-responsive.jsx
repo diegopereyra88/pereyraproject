@@ -15,7 +15,6 @@ import Animat from "./animation";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Anim from "../gif/mirafinalp2.gif";
 import { Link } from "react-router-dom";
-import Gridres from "./grid-responsive";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,40 +37,43 @@ const useStyles = makeStyles(theme => ({
     width: "10%"
   },
   animation: {
-    backgroundImage: `url(${Fondoanim})`,
-    backgroundRepeat: "no-repeat"
+    backgroundImage: `url(${Fondoanim})`
   }
 }));
 
 export default function CenteredGrid() {
   const classes = useStyles();
-  const isActive = useMediaQuery("(min-width:768px)"); //se usa para mediaquery libreria de react
-  const titulos = useMediaQuery("(max-width:768px)"); //se usa para mediaquery libreria de react
+
   return (
     <div className={classes.root}>
-      {isActive && (
-        <Grid container>
-          <Grid item xs={4}>
-            <Link to="/nose">
-              <img src={Piezas} alt="" />
-            </Link>
-          </Grid>
-          <Grid item xs={4}>
-            <img src={Parlante} alt="" />
-          </Grid>
-          <Grid item xs={4}>
-            <img src={Jostik} alt="" />
-          </Grid>
-          <Grid item xs={4}>
-            <img src={Design} alt="" />
-          </Grid>
-          <Grid item xs={4}>
-            <img src={Art} alt="" />
-          </Grid>
-          <Grid item xs={4} className={classes.animation}></Grid>
+      <Grid container>
+        <Grid item xs={12}>
+          <Link to="/nose">
+            <img src={Piezas} alt="" />
+          </Link>
         </Grid>
-      )}
-      {titulos && <Gridres />}
+        <Grid item xs={12}>
+          <img src={Parlante} alt="" />
+        </Grid>
+        <Grid item xs={12}>
+          <img src={Jostik} alt="" />
+        </Grid>
+        <Grid item xs={12}>
+          <img src={Design} alt="" />
+        </Grid>
+        <Grid item xs={12}>
+          <img src={Art} alt="" />
+        </Grid>
+        <Grid item xs={12} className={classes.animation}>
+          <p>
+            hola esta es la pagina resposiva mia esperro Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Ea ratione nihil laboriosam ad
+            dolorem nulla perferendis officiis qui magnam reprehenderit tenetur
+            assumenda culpa doloribus, nostrum reiciendis eaque quae quibusdam
+            fugiat!
+          </p>
+        </Grid>
+      </Grid>
     </div>
   );
 }

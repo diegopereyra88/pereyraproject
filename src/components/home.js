@@ -19,14 +19,13 @@ import Footer from "./piepagina";
 import Inicio from "./ejercisios/prueba-grids";
 import Anima from "./ejercisios/prueba-spring2";
 import Anima2 from "./ejercisios/boton-evento";
+import Path from "./ejercisios/prueba-path-svg";
 
 class Home extends Component {
   render() {
     return (
       <React.Fragment>
         <Inicio />
-        <Anima />
-        <Anima2 />
       </React.Fragment>
     );
   }

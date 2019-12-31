@@ -27,8 +27,8 @@ const useStyles = makeStyles({
 
 export default function SimpleAppBar() {
   const classes = useStyles();
-  const isActive = useMediaQuery("(max-width:600px)"); //se usa para mediaquery libreria de react
-  const titulos = useMediaQuery("(min-width:600px)"); //se usa para mediaquery libreria de react
+  const isActive = useMediaQuery("(max-width:768px)"); //se usa para mediaquery libreria de react
+  const titulos = useMediaQuery("(min-width:768px)"); //se usa para mediaquery libreria de react
 
   return (
     <div className={classes.root}>
