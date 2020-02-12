@@ -8,7 +8,9 @@ import Jostik from "../img/jostik-09.svg";
 import Piezas from "../img/pieza.svg";
 import Design from "../img/design.svg";
 import Art from "../img/art3-11.svg";
-import Animation from "../img/animation.svg";
+import Animation from "../img/animation1.svg";
+import Music from "../img/music.svg";
+import Gaming from "../img/gaming.svg";
 
 import Fondoanim from "../img/fondoanim.svg";
 
@@ -61,10 +63,10 @@ export default function CenteredGrid() {
             </Link>
           </Grid>
           <Grid item xs={4}>
-            <img src={Parlante} alt="" className={classes.imagenes} />
+            <img src={Music} alt="" className={classes.imagenes} />
           </Grid>
           <Grid item xs={4}>
-            <img src={Jostik} alt="" className={classes.imagenes} />
+            <img src={Gaming} alt="" className={classes.imagenes} />
           </Grid>
           <Grid item xs={4}>
             <img src={Design} alt="" className={classes.imagenes} />

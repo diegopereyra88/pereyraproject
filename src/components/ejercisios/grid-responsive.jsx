@@ -1,20 +1,17 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
-import Paper from "@material-ui/core/Paper";
+
 import Grid from "@material-ui/core/Grid";
-import Pieza from "../img/pieza1.svg";
-import Parlante from "../img/parlante1-03.svg";
+
 import Jostik from "../img/jostik-09.svg";
 import Piezas from "../img/pieza.svg";
 import Design from "../img/design.svg";
 import Art from "../img/art3-11.svg";
-import Animation from "../img/animation.svg";
-import Risas from "../img/risas.svg";
+import Animation from "../img/animation1.svg";
+import Music from "../img/music.svg";
+import Gaming from "../img/gaming.svg";
 import Fondoanim from "../img/fondoanim.svg";
-import Animat from "./animation";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Anim from "../gif/mirafinalp2.gif";
+
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
@@ -54,10 +51,10 @@ export default function CenteredGrid() {
           </Link>
         </Grid>
         <Grid item xs={12}>
-          <img src={Parlante} alt="" />
+          <img src={Music} alt="" />
         </Grid>
         <Grid item xs={12}>
-          <img src={Jostik} alt="" />
+          <img src={Gaming} alt="" />
         </Grid>
         <Grid item xs={12}>
           <img src={Design} alt="" />
