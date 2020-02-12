@@ -9,6 +9,7 @@ import Jostik from "../img/jostik-09.svg";
 import Piezas from "../img/pieza.svg";
 import Design from "../img/design.svg";
 import Art from "../img/art3-11.svg";
+import Animation from "../img/animation.svg";
 import Risas from "../img/risas.svg";
 import Fondoanim from "../img/fondoanim.svg";
 import Animat from "./animation";
@@ -25,7 +26,7 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: "cover"
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(0),
     textAlign: "center",
     color: theme.palette.text.secondary
   },
@@ -64,14 +65,8 @@ export default function CenteredGrid() {
         <Grid item xs={12}>
           <img src={Art} alt="" />
         </Grid>
-        <Grid item xs={12} className={classes.animation}>
-          <p>
-            hola esta es la pagina resposiva mia esperro Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Ea ratione nihil laboriosam ad
-            dolorem nulla perferendis officiis qui magnam reprehenderit tenetur
-            assumenda culpa doloribus, nostrum reiciendis eaque quae quibusdam
-            fugiat!
-          </p>
+        <Grid item xs={12}>
+          <img src={Animation} alt="" />
         </Grid>
       </Grid>
     </div>

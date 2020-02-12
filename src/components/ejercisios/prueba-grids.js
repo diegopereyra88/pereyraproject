@@ -1,24 +1,25 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
-import Paper from "@material-ui/core/Paper";
+
 import Grid from "@material-ui/core/Grid";
-import Pieza from "../img/pieza1.svg";
+
 import Parlante from "../img/parlante1-03.svg";
 import Jostik from "../img/jostik-09.svg";
 import Piezas from "../img/pieza.svg";
 import Design from "../img/design.svg";
 import Art from "../img/art3-11.svg";
-import Risas from "../img/risas.svg";
+import Animation from "../img/animation.svg";
+
 import Fondoanim from "../img/fondoanim.svg";
-import Animat from "./animation";
+
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Anim from "../gif/mirafinalp2.gif";
+
 import { Link } from "react-router-dom";
-import Gridres from "./grid-responsive";
+import Gridres from "./grid-responsive"; //pagina para celu
 
 const useStyles = makeStyles(theme => ({
   root: {
+    padding: "3%",
     flexGrow: 1,
     backgroundColor: "#AD95DE",
     //backgroundImage: `url(${Fondoanim})`,
@@ -29,6 +30,9 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary
+  },
+  imagenes: {
+    padding: "2%"
   },
   risas: {
     margin: "auto",
@@ -53,22 +57,24 @@ export default function CenteredGrid() {
         <Grid container>
           <Grid item xs={4}>
             <Link to="/nose">
-              <img src={Piezas} alt="" />
+              <img src={Piezas} alt="" className={classes.imagenes} />
             </Link>
           </Grid>
           <Grid item xs={4}>
-            <img src={Parlante} alt="" />
+            <img src={Parlante} alt="" className={classes.imagenes} />
           </Grid>
           <Grid item xs={4}>
-            <img src={Jostik} alt="" />
+            <img src={Jostik} alt="" className={classes.imagenes} />
           </Grid>
           <Grid item xs={4}>
-            <img src={Design} alt="" />
+            <img src={Design} alt="" className={classes.imagenes} />
           </Grid>
           <Grid item xs={4}>
-            <img src={Art} alt="" />
+            <img src={Art} alt="" className={classes.imagenes} />
           </Grid>
-          <Grid item xs={4} className={classes.animation}></Grid>
+          <Grid item xs={4}>
+            <img src={Animation} alt="" className={classes.imagenes} />
+          </Grid>
         </Grid>
       )}
       {titulos && <Gridres />}
