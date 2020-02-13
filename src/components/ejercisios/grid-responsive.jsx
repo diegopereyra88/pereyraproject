@@ -27,6 +27,11 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center",
     color: theme.palette.text.secondary
   },
+  imagenes: {
+    width: "100%",
+
+    borderRadius: "5%"
+  },
   risas: {
     margin: "auto",
     display: "block",
@@ -46,24 +51,24 @@ export default function CenteredGrid() {
     <div className={classes.root}>
       <Grid container>
         <Grid item xs={12}>
-          <Link to="/nose">
-            <img src={Piezas} alt="" />
+          <Link to="/pereyraproject">
+            <img src={Piezas} alt="" className={classes.imagenes} />
           </Link>
         </Grid>
         <Grid item xs={12}>
-          <img src={Music} alt="" />
+          <img src={Music} alt="" className={classes.imagenes} />
         </Grid>
         <Grid item xs={12}>
-          <img src={Gaming} alt="" />
+          <img src={Gaming} alt="" className={classes.imagenes} />
         </Grid>
         <Grid item xs={12}>
-          <img src={Design} alt="" />
+          <img src={Design} alt="" className={classes.imagenes} />
         </Grid>
         <Grid item xs={12}>
-          <img src={Art} alt="" />
+          <img src={Art} alt="" className={classes.imagenes} />
         </Grid>
         <Grid item xs={12}>
-          <img src={Animation} alt="" />
+          <img src={Animation} alt="" className={classes.imagenes} />
         </Grid>
       </Grid>
     </div>

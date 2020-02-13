@@ -15,6 +15,8 @@ import Gaming from "../img/gaming.svg";
 import Fondoanim from "../img/fondoanim.svg";
 
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Box from "@material-ui/core/Box";
+import { borders } from "@material-ui/system";
 
 import { Link } from "react-router-dom";
 import Gridres from "./grid-responsive"; //pagina para celu
@@ -34,7 +36,9 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.secondary
   },
   imagenes: {
-    padding: "2%"
+    width: "90%",
+    padding: "2%",
+    borderRadius: "10%"
   },
   risas: {
     margin: "auto",
@@ -58,7 +62,7 @@ export default function CenteredGrid() {
       {isActive && (
         <Grid container>
           <Grid item xs={4}>
-            <Link to="/nose">
+            <Link to="/pereyraproject">
               <img src={Piezas} alt="" className={classes.imagenes} />
             </Link>
           </Grid>
@@ -72,7 +76,9 @@ export default function CenteredGrid() {
             <img src={Design} alt="" className={classes.imagenes} />
           </Grid>
           <Grid item xs={4}>
-            <img src={Art} alt="" className={classes.imagenes} />
+            <Box borderRadius="50%">
+              <img src={Art} alt="" className={classes.imagenes} />
+            </Box>
           </Grid>
           <Grid item xs={4}>
             <img src={Animation} alt="" className={classes.imagenes} />

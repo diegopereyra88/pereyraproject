@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "./App.css";
 
-import Primaveracero from "./components/ejercisios/spring2.js";
+import Pereyraproject from "./components/ejercisios/spring2.js";
 
 import Cuadricula from "./components/ejercisios/cuadricula.js";
 import Grid2 from "./components/ejercisios/grid2.js";
@@ -22,8 +22,8 @@ class App extends Component {
             {/*"/grilla" menu de opciones animation music etc,etc*/}
             <Route path="/celu" component={Cuadricula} />
             {/* "/celu" menu de cudricula pref para celu */}
-            <Route path="/NOSE" component={Primaveracero} />
-            {/*"/NOSE " pagina presentando Pereyra Project*/}
+            <Route path="/pereyraproject" component={Pereyraproject} />
+            {/*"/pereyraproject " pagina presentando Pereyra Project*/}
             <Route path="/" component={Home} />
             {/*"pagina principal " */}
           </Switch>
