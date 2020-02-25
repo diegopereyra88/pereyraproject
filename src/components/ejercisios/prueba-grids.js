@@ -11,6 +11,8 @@ import Art from "../img/art3-11.svg";
 import Animation from "../img/animation1.svg";
 import Music from "../img/music.svg";
 import Gaming from "../img/gaming.svg";
+import WebPrograming from "../img/programing-web-programing.svg";
+import Program from "../img/program.svg";
 
 import Fondoanim from "../img/fondoanim.svg";
 
@@ -82,6 +84,12 @@ export default function CenteredGrid() {
           </Grid>
           <Grid item xs={4}>
             <img src={Animation} alt="" className={classes.imagenes} />
+          </Grid>
+          <Grid item xs={4}>
+            <img src={WebPrograming} alt="" className={classes.imagenes} />
+          </Grid>
+          <Grid item xs={4}>
+            <img src={Program} alt="" className={classes.imagenes} />
           </Grid>
         </Grid>
       )}

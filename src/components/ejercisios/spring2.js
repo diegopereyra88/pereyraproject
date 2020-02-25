@@ -3,7 +3,13 @@ import React from "react";
 import { Spring } from "react-spring/renderprops";
 
 import Perfil from "../img/foto-perfil.png";
-import PPAvatar from "../img/logo-pereyra-project-avatar1-10.svg";
+import PPAvatar1 from "../img/PPAvatar1.svg";
+import ArtAvatar1 from "../img/art-avatar1.svg";
+import Avatar1 from "../img/PPAvatar1.svg";
+import GamingAvatar1 from "../img/gaming-avatar1.svg";
+import DesignAvatar1 from "../img/design-avatar1.svg";
+import MusicAvatar1 from "../img/music-avatar1.svg";
+import AnimationAvatar1 from "../img/animation-avatar1.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -54,52 +60,66 @@ export default function Pereyraproject() {
               <Container>
                 <Grid container spacing={5}>
                   <Grid item xs>
-                    <Paper className={classes.paper}>xs</Paper>
-                  </Grid>
-                  <Grid item xs>
-                    <Paper className={classes.paper}>
-                      <p>proyecto guardadode prueba para project</p>
-                    </Paper>
-                  </Grid>
-                  <Grid item xs>
                     <Paper className={classes.paper}>
                       <Avatar
                         alt="Diego Pereyra"
-                        src={PPAvatar}
+                        src={PPAvatar1}
                         className={classes.large2}
                       />
                       <p>
-                        Pereyra Project es un sitio dedicado al arte
-                        digital.Diego Pereyra muestra a traves de esta pagina su
-                        recorrido por el arte digital. Musica, Arte , Gaming,
-                        Diseño, Animacion,Programacion, son algunos de los
-                        puntos importantes en esta pagina dedicada a expresion
-                        artistica digital de Diego Pereyra.
+                        Pereyra Project es un sitio dedicado al arte digital.En
+                        esta pagina su recorrido por el arte digital. Musica,
+                        Arte , Gaming, Diseño, Animacion,Programacion, son
+                        algunos de los puntos importantes en esta pagina
+                        dedicada a expresion artistica digital.
                       </p>
                     </Paper>
                   </Grid>
-                  <Grid item xs>
-                    <Avatar
-                      alt="Diego Pereyra"
-                      src={Perfil}
-                      className={classes.large}
-                    />
-                  </Grid>
                 </Grid>
-                <Grid container spacing={3} justify="center" direction="row">
-                  <Grid item xs={3}>
-                    <Avatar
-                      alt="Diego Pereyra"
-                      src={Perfil}
-                      className={classes.large}
-                    />
-                  </Grid>
-                  <Grid item xs={3}>
-                    <Avatar
-                      alt="Diego Pereyra"
-                      src={Perfil}
-                      className={classes.large}
-                    />
+              </Container>
+              <Container>
+                <Grid container spacing={5}>
+                  <Grid item xs>
+                    <Paper className={classes.paper}>
+                      <Grid
+                        container
+                        direction="row"
+                        justify="space-evenly"
+                        alignItems="center"
+                      >
+                        <Avatar
+                          alt="Diego Pereyra"
+                          src={ArtAvatar1}
+                          className={classes.large2}
+                        />
+                        <Avatar
+                          alt="Diego Pereyra"
+                          src={GamingAvatar1}
+                          className={classes.large2}
+                        />
+                        <Avatar
+                          alt="Diego Pereyra"
+                          src={AnimationAvatar1}
+                          className={classes.large2}
+                        />
+                        <Avatar
+                          alt="Diego Pereyra"
+                          src={MusicAvatar1}
+                          className={classes.large2}
+                        />
+                        <Avatar
+                          alt="Diego Pereyra"
+                          src={DesignAvatar1}
+                          className={classes.large2}
+                        />
+                      </Grid>
+                      <p>
+                        Recorre de manera agil y simple los distintos links de
+                        la pagina.Cada uno de ellos expresa de manera sencilla
+                        el trabajo realizado con explicaciones para que puedas
+                        entender mejor el concepto del arte digital.
+                      </p>
+                    </Paper>
                   </Grid>
                 </Grid>
               </Container>
