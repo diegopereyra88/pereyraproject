@@ -11,9 +11,9 @@ import Art from "../img/art3-11.svg";
 import Animation from "../img/animation1.svg";
 import Music from "../img/music.svg";
 import Gaming from "../img/gaming.svg";
-import WebPrograming from "../img/programing-web-programing.svg";
+import WebPrograming from "../img/programing-web-programing1.svg";
 import Program from "../img/program.svg";
-
+import TresD from "../img/3d4.svg";
 import Fondoanim from "../img/fondoanim.svg";
 
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     padding: "3%",
     flexGrow: 1,
-    backgroundColor: "#AD95DE",
+    backgroundColor: "#6D559E",
     //backgroundImage: `url(${Fondoanim})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"
@@ -90,6 +90,9 @@ export default function CenteredGrid() {
           </Grid>
           <Grid item xs={4}>
             <img src={Program} alt="" className={classes.imagenes} />
+          </Grid>
+          <Grid item xs={4}>
+            <img src={TresD} alt="" className={classes.imagenes} />
           </Grid>
         </Grid>
       )}
