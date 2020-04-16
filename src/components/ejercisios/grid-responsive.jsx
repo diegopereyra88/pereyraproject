@@ -12,7 +12,7 @@ import Gaming from "../img/gaming.svg";
 import Fondoanim from "../img/fondoanim.svg";
 import WebPrograming from "../img/programing-web-programing1.svg";
 import Program from "../img/program.svg";
-import TresD from "../img/3d4.svg";
+import TresD from "../img/3d5.svg";
 
 import { Link } from "react-router-dom";
 
@@ -58,7 +58,9 @@ export default function CenteredGrid() {
           </Link>
         </Grid>
         <Grid item xs={12}>
-          <img src={Music} alt="" className={classes.imagenes} />
+          <Link to="/musicpage">
+            <img src={Music} alt="" className={classes.imagenes} />
+          </Link>
         </Grid>
         <Grid item xs={12}>
           <img src={Gaming} alt="" className={classes.imagenes} />

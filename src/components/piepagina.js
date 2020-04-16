@@ -18,14 +18,14 @@ function Copyright() {
   );
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   main: {
     marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2)
+    marginBottom: theme.spacing(2),
   },
   footer: {
     padding: theme.spacing(3, 2),
@@ -33,8 +33,8 @@ const useStyles = makeStyles(theme => ({
     backgroundColor:
       theme.palette.type === "dark"
         ? theme.palette.grey[800]
-        : theme.palette.grey[200]
-  }
+        : theme.palette.grey[200],
+  },
 }));
 
 export default function StickyFooter() {

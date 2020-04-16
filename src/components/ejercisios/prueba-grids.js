@@ -3,8 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
 
-import Parlante from "../img/parlante1-03.svg";
-import Jostik from "../img/jostik-09.svg";
 import Piezas from "../img/pieza.svg";
 import Design from "../img/design.svg";
 import Art from "../img/art3-11.svg";
@@ -13,7 +11,7 @@ import Music from "../img/music.svg";
 import Gaming from "../img/gaming.svg";
 import WebPrograming from "../img/programing-web-programing1.svg";
 import Program from "../img/program.svg";
-import TresD from "../img/3d4.svg";
+import TresD from "../img/3d5.svg";
 import Fondoanim from "../img/fondoanim.svg";
 
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -39,6 +37,12 @@ const useStyles = makeStyles(theme => ({
   },
   imagenes: {
     width: "90%",
+    padding: "2%",
+    borderRadius: "10%"
+  },
+  img: {
+    height: "298px",
+    width: "550px",
     padding: "2%",
     borderRadius: "10%"
   },
@@ -69,7 +73,9 @@ export default function CenteredGrid() {
             </Link>
           </Grid>
           <Grid item xs={4}>
-            <img src={Music} alt="" className={classes.imagenes} />
+            <Link to="/musicpage">
+              <img src={Music} alt="" className={classes.imagenes} />
+            </Link>
           </Grid>
           <Grid item xs={4}>
             <img src={Gaming} alt="" className={classes.imagenes} />
@@ -92,7 +98,7 @@ export default function CenteredGrid() {
             <img src={Program} alt="" className={classes.imagenes} />
           </Grid>
           <Grid item xs={4}>
-            <img src={TresD} alt="" className={classes.imagenes} />
+            <img src={TresD} alt="" className={classes.img} />
           </Grid>
         </Grid>
       )}
